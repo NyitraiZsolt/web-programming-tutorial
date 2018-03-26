@@ -5,7 +5,7 @@ function countTo(n) {
     }
 
 }
-countTo(1);
+countTo(5);
 
 function addNumbers(a , b){
     console.info("primul numar este"+a);
