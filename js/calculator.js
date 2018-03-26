@@ -11,11 +11,17 @@ function addNumbers(a , b){
     console.info("primul numar este"+a);
     console.info("al doilea numar este" + b);
 
-    for (;b>0;){
-        a++;     //il punem la a
-        b--;     //luam un deget de la b
-        console.info(a+'-au mai ramas '+b+"degetele" );
+    var suma=a; //este numarul cel mai mare
+    var degete=b; //este numarul cel mai mic
+    if (a<b) {
+        suma=b;
+        degete=a;
     }
-    console.info("suma este"+a);
+    while(degete>0){
+        degete--;     //il punem la a
+        suma++;     //luam un deget de la b
+        console.info(suma+'-au mai ramas '+degete+"degetele" );
+    }
+    console.info("suma este"+suma);
 }
-var count= addNumbers(2,8);
+var count= addNumbers(8,5);
